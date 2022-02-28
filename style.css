@@ -7,7 +7,7 @@ body {
     text-align: center;
 }
 
-.title {
+.main-text {
     font-weight: 300;
     color: #9ca3af;
     font-size: 4rem;
@@ -18,6 +18,10 @@ body {
     font-weight: 700;
 }
 
+.tibue99:hover {
+    color: #fff;
+}
+
 .container {
     margin-left: 5%;
     margin-right: 5%;
@@ -26,68 +30,56 @@ body {
     justify-content: center;
     align-content: flex-start;
     height:fit-content;
-    
 }
 
-.inner-container {
+.title-container {
+    display: flex;
     color: black;
+    margin: 5%;
+    margin-top: 3%;
+    height: 40%;
+    align-items: center;
+    justify-content: center;
 }
 
 .item {
     margin: 18px;
     border-radius: 10px;
-    width: 500px;
-    min-height: 300px;
+    width: 400px;
+    height: 200px;
     font-size: 3rem;
     background-color: #1f2937;
     color: #9ca3af;
     transition-duration: 0.2s;
 }
 
+.title-item {
+    margin-right: 5%;
+    border-radius: 10px;
+    background-color: #1f2937;
+    color: #9ca3af;
+    transition-duration: 0.2s;
+}
+
 .item:hover {
-    color: #fff;
     transform: scale(1.1);
     box-shadow: 0 .2rem .5rem rgba(0,0,0,0.3), 0 1rem .5rem rgba(0,0,0,0.22)
 }
 
-
-/*
-@keyframes in {
-    0% {
-        transform: scale(1);
-    }
-    
-    100% {
-        transform: scale(1.1);
-    }
+.item:hover .title-txt {
+    color: #fff;
 }
 
-@keyframes out {
-    0% {
-        transform: scale(1.1);
-    }
-    
-    100% {
-        transform: scale(1);
-    }
-}
-*/
-
-.discord {
-    /*background-color: #5865F2;*/
+.title-img {
+    height:70%; 
 }
 
-.fiverr {
-     /*background-color: #00c661;*/
-    
+.title-txt {
+    font-size: 80%;
 }
 
-.github {
-    /* background-color: #101414;*/
-}
-
-.box-img {
-    height: 128px;
-    
-    margin-top: 5%;
+.body-text {
+    font-size: 50%;
+    margin: 5%;
+    margin-top: -3%;
 }
