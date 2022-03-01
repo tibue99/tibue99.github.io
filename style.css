@@ -3,25 +3,36 @@
 }
 
 :root {
-    --bg-color: #111827;
-    --item-color: #1f2937;
-    --text-color: #9ca3af;
+    --bg: #111827;
+    --item: #1f2937;
+    --text: #9ca3af;
 }
 
 body {
-    background-color: var(--bg-color);
+    background-color: var(--bg);
     text-align: center;
+    color: var(--text)
 }
 
-.main-text {
-    color: var(--text-color);
+/*
+.headline {
+    color: var(--text);
     font-size: 4rem;
     font-weight: 300;
+    margin-bottom: .5rem;
+}
+*/
+
+.sub-headline {
+    font-weight: 300;
+    margin-bottom: 3rem;
+    font-size: 1.75rem;
 }
 
 .tibue99 {
-    font-size: 6rem;
+    font-size: 5rem;
     font-weight: 700;
+    margin-bottom: -1rem;
 }
 
 .tibue99:hover {
@@ -33,8 +44,9 @@ body {
     justify-content: center;
     align-content: flex-start;
     flex-wrap: wrap;
-    margin: 5%;
-    margin-top: 0%;
+    margin: 2%;
+    margin-top: 2rem;
+    margin-bottom: 3rem;
 }
 
 .title-container {
@@ -54,15 +66,15 @@ body {
     height: 200px;
     border-radius: .75rem;
     font-size: 3rem;
-    color: var(--text-color);
-    background-color: var(--item-color);
+    color: var(--text);
+    background-color: var(--item);
     transition-duration: 0.2s;
     overflow: hidden;
 }
 
 .title-item {
     margin-right: 5%;
-    color: var(--text-color);
+    color: var(--text);
 }
 
 .item:hover {
@@ -70,9 +82,11 @@ body {
     box-shadow: 0 .2rem .5rem rgba(0,0,0,0.3), 0 1rem .5rem rgba(0,0,0,0.22)
 }
 
+/*
 .item:hover .title-txt {
     color: white;
 }
+*/
 
 .title-img {
     height:70%; 
@@ -80,10 +94,19 @@ body {
 
 .title-txt {
     font-size: 80%;
+    color: white;
 }
 
 .body-text {
     font-size: 50%;
     margin: 5%;
     margin-top: -3%;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  color: var(--text);
 }
