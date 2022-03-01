@@ -2,15 +2,21 @@
     font-family: 'Source Sans Pro';
 }
 
+:root {
+    --bg-color: #111827;
+    --item-color: #1f2937;
+    --text-color: #9ca3af;
+}
+
 body {
-    background-color: #111827;
+    background-color: var(--bg-color);
     text-align: center;
 }
 
 .main-text {
-    font-weight: 300;
-    color: #9ca3af;
+    color: var(--text-color);
     font-size: 4rem;
+    font-weight: 300;
 }
 
 .tibue99 {
@@ -19,46 +25,44 @@ body {
 }
 
 .tibue99:hover {
-    color: #fff;
+    color: white;
 }
 
 .container {
-    margin-left: 5%;
-    margin-right: 5%;
     display: flex;
-    flex-wrap: wrap;
     justify-content: center;
     align-content: flex-start;
-    height:fit-content;
+    flex-wrap: wrap;
+    margin: 5%;
+    margin-top: 0%;
 }
 
 .title-container {
     display: flex;
-    color: black;
+    align-items: center;
+    justify-content: center;
     margin: 5%;
     margin-top: 3%;
     height: 40%;
-    align-items: center;
-    justify-content: center;
+    color: black;
 }
 
 .item {
-    margin: 18px;
-    border-radius: 10px;
+    margin: .85rem;
     width: 400px;
+    min-width: 350px;
     height: 200px;
+    border-radius: .75rem;
     font-size: 3rem;
-    background-color: #1f2937;
-    color: #9ca3af;
+    color: var(--text-color);
+    background-color: var(--item-color);
     transition-duration: 0.2s;
+    overflow: hidden;
 }
 
 .title-item {
     margin-right: 5%;
-    border-radius: 10px;
-    background-color: #1f2937;
-    color: #9ca3af;
-    transition-duration: 0.2s;
+    color: var(--text-color);
 }
 
 .item:hover {
@@ -67,7 +71,7 @@ body {
 }
 
 .item:hover .title-txt {
-    color: #fff;
+    color: white;
 }
 
 .title-img {
