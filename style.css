@@ -14,29 +14,34 @@ body {
     color: var(--text)
 }
 
-/*
-.headline {
-    color: var(--text);
-    font-size: 4rem;
-    font-weight: 300;
-    margin-bottom: .5rem;
-}
-*/
-
-.sub-headline {
-    font-weight: 300;
-    margin-bottom: 3rem;
-    font-size: 1.75rem;
-}
-
 .tibue99 {
+    display: inline-block;
     font-size: 5rem;
     font-weight: 700;
     margin-bottom: -1rem;
+    margin: 0%;
+    margin-top: 2%;
+    text-align: center;
+    transition-duration: 1s;
+}
+
+.sub-headline {
+    font-weight: 300;
+    font-size: 1.75rem;
+    margin: 3%;
+    margin-bottom: 3rem;
+    margin-top: 0%;
+}
+
+.center {
+    text-align: center;
 }
 
 .tibue99:hover {
+    transform: rotateY(360deg);
     color: white;
+    transition-duration: 20s;
+    transition-delay: 5s;
 }
 
 .container {
