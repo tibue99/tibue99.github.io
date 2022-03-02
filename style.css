@@ -4,9 +4,10 @@
 }
 
 :root {
-    --bg: #111827;
-    --item: #1f2937;
-    --text: #9ca3af;
+    --bg: #222727;
+    --item: #3a4242;
+    --txt-main: #d8d8d8;
+    --txt-sec: #adb4c2;
 }
 
 b {
@@ -16,25 +17,24 @@ b {
 body {
     background-color: var(--bg);
     text-align: center;
-    color: var(--text)
+    color: var(--txt-sec)
 }
 
 .tibue99 {
     display: inline-block;
     font-size: 5rem;
-    font-weight: 700;
     margin-bottom: -1rem;
     margin: 0%;
     margin-top: 1rem;
     text-align: center;
     transition-duration: 1s;
     animation: .7s top-slide;
+    color: var(--txt-main);
 }
 
 .sub-headline {
-    font-weight: 300;
     font-size: 1.75rem;
-    margin: 3%;
+    margin: 1.5%;
     margin-bottom: 3rem;
     margin-top: 0%;
     animation: .7s left-slide;
@@ -83,7 +83,6 @@ body {
     margin-top: 3%;
     margin-bottom: 0%;
     height: 30%;
-    color: black;
 }
 
 .item {
@@ -93,7 +92,7 @@ body {
     height: 200px;
     border-radius: .75rem;
     font-size: 3rem;
-    color: var(--text);
+    
     background-color: var(--item);
     transition-duration: 0.2s;
     overflow: hidden;
@@ -111,7 +110,6 @@ body {
 
 .title-item {
     margin-right: 5%;
-    color: var(--text);
 }
 
 .item:hover {
@@ -130,21 +128,22 @@ body {
 
 .title-txt {
     font-size: 70%;
-    color: white;
+    color: var(--txt-main);
 }
 
 .body-txt {
-    font-size: 45%;
+    font-size: 44%;
     margin: 5%;
     margin-bottom: 0%;
-    margin-top:1%
+    margin-top: 1.5%;
+    color: rgb(200, 214, 226);
 }
 
 .body-url {
     display: inline-block;
     position: relative;
     top: -8%;
-    color: #40c7df;
+    color: #5fe7ff;
     font-size: 40%;
 }
 
@@ -158,5 +157,4 @@ footer {
     justify-content: center;
     align-items: center;
     width: 100%;
-    color: var(--text);
 }
