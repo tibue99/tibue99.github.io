@@ -36,8 +36,8 @@ body {
 .tibue99:hover {
     color: white;
     text-shadow: var(--glow);
-    transition-duration: 15s;
-    transition-delay: 2s;
+    transition-duration: 5s;
+    transition-delay: 1.5s;
 }
 
 .sub-headline {
