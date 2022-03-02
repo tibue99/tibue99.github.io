@@ -58,7 +58,7 @@ body {
 
 @keyframes left-slide {
     0% {
-        transform: translateX(-10%);
+        transform: translateX(-5%);
     }
     100% {
         transform: translateX(0);
@@ -81,7 +81,7 @@ body {
     justify-content: center;
     margin: 5%;
     margin-top: 3%;
-    height: 40%;
+    height: 30%;
     color: black;
 }
 
@@ -120,22 +120,34 @@ body {
 
 .item:hover .title-txt {
     color: white;
-    text-shadow: 0 -1px 4px #FFF, 0 -2px 10px rgb(0, 255, 242), 0 -10px 20px #00f7ffb2, 0 -18px 40px rgb(0, 255, 21);
+    text-shadow: 0 -1px 4px #FFF, 0 -2px 10px rgb(0, 255, 242), 0 -10px 20px #00f7ffb2, 0 -18px 40px rgb(0, 255, 234);
 }
 
 .title-img {
-    height:70%; 
+    height:80%; 
 }
 
 .title-txt {
-    font-size: 80%;
+    font-size: 70%;
     color: white;
 }
 
 .body-txt {
-    font-size: 50%;
+    font-size: 45%;
     margin: 5%;
+    margin-bottom: 0%;
     margin-top: -3%;
+}
+
+.body-url {
+    color: #40c7df;
+    margin-top: 3%;
+    font-size: 45%;
+}
+
+.body-url:hover {
+    color: #00d9ff;
+    text-decoration: underline;
 }
 
 footer {
